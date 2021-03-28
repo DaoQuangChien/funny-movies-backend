@@ -5,7 +5,7 @@ const db = require("./app/models");
 const app = express();
 const corsOptions = {
   origin: [
-    "https://funny-movies-frontend-chien.herokuapp.com/",
+    "https://funny-movies-frontend-chien.herokuapp.com",
     "http://localhost:3000",
   ],
 };
