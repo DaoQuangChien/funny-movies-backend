@@ -5,7 +5,7 @@ const db = require("./app/models");
 const dbConfig = require("./app/config/db.config");
 const app = express();
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://funny-movies-frontend-chien.herokuapp.com/",
 };
 const PORT = process.env.PORT || 8080;
 
