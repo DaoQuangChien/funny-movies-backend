@@ -2,10 +2,12 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const db = require("./app/models");
-const dbConfig = require("./app/config/db.config");
 const app = express();
 const corsOptions = {
-  origin: "https://funny-movies-frontend-chien.herokuapp.com/",
+  origin: [
+    "https://funny-movies-frontend-chien.herokuapp.com/",
+    "http://localhost:3000",
+  ],
 };
 const PORT = process.env.PORT || 8080;
 
